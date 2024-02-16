@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -23,7 +23,7 @@ body {
     background-color: rgba(12, 154, 186, 0.56);
     width: 70%;
     height: max-content;    
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 0 20px 5px #151515;
     font-size: 1.5rem;
 }
@@ -56,46 +56,44 @@ h2 {
     font-size: clamp(1rem, 0.3043rem + 3.4783vw, 2rem);
 }
 
-#weight-input-wrapper {
+label {
+    font-size: clamp(1rem, 0.3043rem + 3.4783vw, 1.5rem);
+    font-weight: bold;
+}
+
+#weight-input-wrapper, #height-input-wrapper {
     height: fit-content;
     text-align: center;
     padding-bottom: 20px;
 }
 
-#height-input-wrapper {
-    height: max-content;
-    text-align: center;
-    padding-bottom: 20px;
-}
 
-#weight-input{
-    height: 1.5rem;
-    width: 100%;
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    }
+
+#weight-input, #height-input{
+    height: 2rem;
+    width: 90%;
     border-radius: 5px;
     border: 1px solid rgb(104, 104, 104);
-}
-
-#height-input{
-    height: 1.5rem;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid rgb(104, 104, 104);
+    margin-top: 10px;
 }
 
 #calculate-btn {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 }
 
 button {
     padding: 10px 20px 10px 20px;
-    border: 1px solid rgb(104, 104, 104);
+    border: 0;
     border-radius: 5px;
-    background-color: rgb(12, 8, 243);
+    background-color: rgb(52, 8, 122);
     color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #bmi-wrapper {
@@ -104,18 +102,16 @@ button {
 }
 
 #bmi_result {
-    width: 80%;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: max-content;
     background-color: white;
-    margin: 20px auto;
+    margin: 20px auto ;
     border: 1px solid rgb(104, 104, 104);
     border-radius: 10px;
-    padding-top: 25px;
-    font-size: clamp(0.5rem, 0.3043rem + 3.4783vw, 1.2rem);
-    line-height: 2;
+    padding: 20px;
+    font-size: clamp(0.5rem, 0.3043rem + 3.4783vw, 1.5rem);
 }
 
-/* #weight-input::-webkit-inner-spin-button {
--webkit-appearance: none;
-
-} */
