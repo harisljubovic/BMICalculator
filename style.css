@@ -1,0 +1,74 @@
+body {
+    background-image: url(./img/main-bg.img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#container-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(12, 154, 186, 0.56);
+    width: 60%;
+    height: max-content;    
+    border-radius: 50px;
+    box-shadow: 0 0 20px 5px #151515;
+    font-size: 1.5rem;
+}
+
+#main-heading {
+    height: max-content;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 0 20px 0;
+    margin: 0;
+    font-size: clamp(1rem, 0.3043rem + 3.4783vw, 2.5rem);
+}
+
+#weight-input-wrapper {
+    height: fit-content;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#height-input-wrapper {
+    height: max-content;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#weight-input{
+    height: 1.5rem;
+    width: 80%;
+}
+
+#height-input{
+    height: 1.5rem;
+    width: 80%;
+}
+
+/* #weight-input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+
+} */
