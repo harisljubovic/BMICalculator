@@ -81,7 +81,7 @@ input::-webkit-inner-spin-button {
 
 #weight-input, #height-input{
     height: 2rem;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     border: 1px solid rgb(95, 4, 4);
     margin-top: 15px;
