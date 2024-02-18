@@ -14,26 +14,28 @@
         </div>
         <form action="">
           <div id="weight-input-wrapper">
-            <label for="weight-input">Weight(kg):</label><br />
+            <label for="weight-input"
+              ><img src="./img/weight.png" alt="weight" class="label-img" />
+              Weight(kg):</label
+            ><br />
             <input type="number" name="weight" id="weight-input" />
           </div>
           <div id="height-input-wrapper">
-            <label for="height-input">Height(cm):</label><br />
+            <label for="height-input"
+              ><img src="./img/height.png" alt="height" class="label-img" />
+              Height(cm):</label
+            ><br />
             <input type="number" name="height" id="height-input" />
           </div>
           <div id="calculate-btn-wrapper">
             <button onclick="calculateBMI()" type="button" id="calculate-btn">
-              <img
-                src="./img/bmi-calc-img.png"
-                alt="BMI Calculator Button"
-                id="calculate-btn-img"
-              />
+              CALCULATE
             </button>
           </div>
         </form>
         <div id="bmi-wrapper">
           <h2>Your BMI is:</h2>
-          <div id="bmi_result"></div>
+          <div id="bmi_result">Result</div>
         </div>
         <div id="description">
           <h3 id="description-h3">What is Body Mass Index?</h3>
