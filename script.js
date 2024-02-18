@@ -30,6 +30,7 @@ function calculateBMI() {
   } else if (bmi < 25) {
     category = "Normal Weight";
     resultDiv.style.backgroundColor = "green";
+    resultDiv.style.color = "white";
     adviceHead = "Congratulations !";
     advice = "Your BMI is great, keep it up!";
     adviceSection.classList.add("description-green");
