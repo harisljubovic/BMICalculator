@@ -10,8 +10,7 @@ function calculateBMI() {
 
   if (isNaN(height) || isNaN(weight)) {
     resultDiv.innerHTML = "Please enter valid height and weight!";
-    resultDiv.style.backgroundColor = "white";
-    resultDiv.style.color = "red";
+
     return;
   }
 
@@ -41,7 +40,7 @@ function calculateBMI() {
     adviceHead = "Potentional risks:";
     advice =
       "Cardiovascular disease, gallbladder disease, high blood pressure, type 2 diabetes, osteoarthritis, depression. Please, consult your doctor !";
-    adviceSection.classList.add("description-green");
+    adviceSection.classList.add("description-red");
   } else {
     category = "Obese";
     resultDiv.style.backgroundColor = "red";
